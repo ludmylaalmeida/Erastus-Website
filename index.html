@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANTIA - Embedded Software and Hardware Integration</title>
+    <title>Delta12 - Embedded Software and Hardware Integration</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,10 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#home">ANTIA</a>
+                    <a href="#home">Delta12</a>
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#services" class="nav-link">Products</a></li>
+                    <li><a href="#vulcan" class="nav-link">Products</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#expertise" class="nav-link">Expertise</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <!-- <span class="highlight">ANTIA</span> -->
+                    <!-- <span class="highlight">Delta12</span> -->
                 </h1>
                 <h2 class="hero-subtitle" style="font-size: 4rem;">Embedded Software and Firmware Development <span
                         class="rotating-text">Made Easier</span>.</h2>
@@ -49,145 +49,222 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">Learn More</a>
-                    <a href="#contact" class="btn btn-secondary">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
         <div class="hero-background"></div>
     </section>
-    <!-- Our Expertise Section -->
-    <section id="expertise" class="expertise">
+
+    <!-- Introducing Vulcan -->
+    <section id="vulcan" class="expertise vulcan-section">
         <div class="container">
-            <h2 class="section-title">Introducing Vulcan — the AI-powered, Human-in-the-loop (HITL), CLI tool</h2>
-            <p class="section-subtitle">Designed to help junior developers bridge the knowledge gap and ramp up 10X faster, while enhancing the capabilities of senior engineers.The developer stays fully in control.</p>
+            <h4 style="text-align: center; color: var(--accent-color);">Introducing Vulcan</h4>
+            <h2 class="section-title">The AI-powered, Human-in-the-loop (HITL), CLI tool</h2>
+            <p class="section-subtitle">Designed to help junior developers bridge the knowledge gap and ramp up 10X
+                faster, while enhancing the capabilities of senior engineers.The developer stays fully in control.</p>
+
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                        </svg>
-                    </div>
-                    <h3>Low-level Firmware</h3>
-                    <p>Lorem Ipsum...</p>
+                <div class="introducing-vulcan-card">
+                    <h2 style="font-weight: 700; padding-bottom: 1em;">Embedded Firmware (C/C++)</h2>
+                    <ul style="font-weight: 400; list-style-position: inside;">
+                        <li>Supports static and run-time analysis.</li>
+                        <li>Firmware constraint analyzer and optimization.</li>
+                        <li>Analyzer log and map fault to source.</li>
+                    </ul>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14" />
-                            <path d="M12 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <h3>Embedded Device Driver</h3>
-                    <p>Lorem Ipsum...</p>
+                <div class="introducing-vulcan-card">
+                    <h2 style="padding-bottom: 1em;">Embedded Device Driver
+                    </h2>
+                    <ul style="font-weight: 400; list-style-position: inside;">
+                        <li>Supports driver skeleton generation.</li>
+                        <li>Supports device tree and device tree overlay generation.</li>
+                        <li>Analyzer log and map fault to source.</li>
+                    </ul>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="16" y1="13" x2="8" y2="13" />
-                            <line x1="16" y1="17" x2="8" y2="17" />
-                            <polyline points="10 9 9 9 8 9" />
-                        </svg>
-                    </div>
-                    <h3>Embedded Linux/Yocto</h3>
-                    <p>Lorem Ipsum...</p>
+
+                <div class="introducing-vulcan-card">
+                    <h2 style="padding-bottom: 1em; text-align: center;">Embedded Linux/Yocto</h2>
+                    <ul style="font-weight: light; list-style-position: inside;">
+                        <li>Supports recipe generation and build errors debugging.</li>
+                        <li>Supports Yocto and Buildroot tailored to your product needs.</li>
+                        <li>Analyzer log and map fault to source.</li>
+                    </ul>
                 </div>
+                <a class="btn btn-secondary" href="#contact"
+                    style="margin-top: 2em; display: inline-flex; align-items: center; gap: 0.5rem; grid-column: 1 / -1; justify-self: center;">
+                    Contact Us for Early Access
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services">
-            <div class="container">
-                <h4 style="text-align: center; color: var(--accent-color);">Embedded Linux, Board Bring-up, Embedded Driver and more</h4>
-                </p>
-                <h2 class="section-title">Engineering Services and Consulting</h2>
-                <p class="section-subtitle">Build faster. Deploy confidently. Accelerate your embedded software and firmware development with expert engineering support and our AI-powered, human-in-the-loop (HITL), CLI firmware development tool
-                </p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h4 style="text-align: center; color: var(--accent-color);">Embedded Linux, Board Bring-up, Embedded Driver
+                and more</h4>
+            <h2 class="section-title">Engineering Services and Consulting</h2>
+            <p class="section-subtitle">Build faster. Deploy confidently. Accelerate your embedded software and firmware
+                development with expert engineering support and our AI-powered, human-in-the-loop (HITL), CLI firmware
+                development tool
+            </p>
             <div class="expertise-grid">
                 <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                                <line x1="8" y1="21" x2="16" y2="21" />
-                                <line x1="12" y1="17" x2="12" y2="21" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
+                                </div>
+                                <h3>Embedded Linux</h3>
+                                <p>Custom Embedded Linux solutions with Yocto tailored to your hardware. </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Embedded Linux</h3>
+                                <ul>
+                                    <li>Custom Linux development from the ground up.</li>
+                                    <li>BSP (Board Support Package) development and integration.</li>
+                                    <li>Kernel configuration and driver development.</li>
+                                    <li>Migration from legacy systems to modern Yocto-based solutions.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Embedded Linux Development</h3>
-                        <p>with Yocto & Buildroot tailored to your product needs using Yocto & Buildroot.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                <line x1="12" y1="22.08" x2="12" y2="12" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                                    </svg>
+                                </div>
+                                <h3>Embedded Driver Development</h3>
+                                <p>Custom device drivers that ensure your peripherals and hardware components function
+                                    reliably and efficiently.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Embedded Driver Development</h3>
+                                <ul>
+                                    <li>Custom Linux kernel & user-space drivers and RTOS drivers.</li>
+                                    <li>I2C, SPI, UART, USB, interface drivers.</li>
+                                    <li>GPIO, PWM, ACD, and sensors integration.</li>
+                                    <li>Porting and adapting existing drivers for new hardware.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Embedded Driver Development</h3>
-                        <p>seamless integration between your hardware and embedded ecosystem.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="3" />
-                                <path
-                                    d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path
+                                            d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24" />
+                                    </svg>
+                                </div>
+                                <h3>Firmware Migration & Porting</h3>
+                                <p>Porting and legacy code modernization.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Firmware Migration & Porting</h3>
+                                <p>Porting and legacy code modernization.</p>
+                            </div>
                         </div>
-                        <h3>Low-level / Firmware Engineering</h3>
-                        <p>tailored to your hardware and application needs.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                                <line x1="12" y1="18" x2="12.01" y2="18" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                        <line x1="12" y1="18" x2="12.01" y2="18" />
+                                    </svg>
+                                </div>
+                                <h3>Low-level C/C++ Development</h3>
+                                <p>that deliver exceptional performance for your products.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Custom Embedded Application</h3>
+                                <ul>
+                                    <li>Real-time application development</li>
+                                    <li>Multi-threaded architectures</li>
+                                    <li>Custom protocol implementation</li>
+                                    <li>Performance optimization</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Custom Embedded Application</h3>
-                        <p>that deliver exceptional performance for your products.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="1" y="6" width="18" height="10" rx="2" ry="2" />
-                                <line x1="23" y1="13" x2="23" y2="11" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="1" y="6" width="18" height="10" rx="2" ry="2" />
+                                        <line x1="23" y1="13" x2="23" y2="11" />
+                                    </svg>
+                                </div>
+                                <h3>RTOS Development & Integration</h3>
+                                <p>FreeRTOS & Zephyr Integration.
+                                </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>RTOS Development & Integration</h3>
+                                <p>FreeRTOS & Zephyr Integration.
+                                </p>
+                            </div>
                         </div>
-                        <h3>Board Bring-up</h3>
-                        <p>to accelerate product development, faster time-to-market and reduce costs.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-                                <path
-                                    d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-                            </svg>
+                    <div class="service-card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="service-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                                        <path
+                                            d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                    </svg>
+                                </div>
+                                <h3>Embedded Middleware & Application Development</h3>
+                                <p>We build the critical software layer that makes your embedded devices intelligent,
+                                    connected, and production-ready.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3> Embedded Middleware & Application Development</h3>
+                                <ul>
+                                    <li>Custom application design and development.</li>
+                                    <li>Real-time and multithreaded application development.
+                                    </li>
+                                    <li>Communication protocol implementation (MQTT, Modbus, CAN).</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>RTOS Development & Integration</h3>
-                        <p>to turn your concepts into functional prototypes in record time.</p>
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
 
     <!-- Our Expertise Section -->
@@ -196,120 +273,57 @@
             <h2 class="section-title">Our Expertise</h2>
             <p class="section-subtitle">Embedded Software Development & Embedded Consultant</p>
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                        </svg>
-                    </div>
-                    <h3>Embedded OS</h3>
-                    <p>Linux, OpenEmbedded/Yocto</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14" />
-                            <path d="M12 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <h3>Communication Protocols</h3>
-                    <p>SPI, I2C, UART</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <path d="M6 8h12" />
-                            <path d="M6 12h8" />
-                        </svg>
-                    </div>
-                    <h3>Embedded Platform</h3>
-                    <p>ARM Cortex M & A, STM32, ARM64/AArch64, Intel x86-64</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                        </svg>
-                    </div>
-                    <h3>RTOS</h3>
-                    <p>FreeRTOS, Zephyr</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
-                        </svg>
-                    </div>
-                    <h3>Embedded Cross-Platform</h3>
-                    <p>ARM Development</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="16" y1="13" x2="8" y2="13" />
-                            <line x1="16" y1="17" x2="8" y2="17" />
-                            <polyline points="10 9 9 9 8 9" />
-                        </svg>
-                    </div>
-                    <h3>Development</h3>
-                    <p>C/C++ Development</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="skills-carousel">
+                    <div class="skills-track">
+                        <span>Embedded Linux Yocto</span>
+                        <span>Buildroot</span>
+                        <span>RTOS</span>
+                        <span>Linux Kernel</span>
+                        <span>SPI</span>
+                        <span>UART</span>
+                        <span>I2C</span>
+                        <span>Embedded Cross-Platform ARM Development</span>
+                        <span>Device Drivers</span>
+                        <span>Embedded Linux Applications</span>
+                        <span>Firmware</span>
+                        <span>C / C++ Development</span>
+                        <span>Python Development</span>
+                        <span>Embedded Software Testing</span>
+                        <span>ARM Cortex Processors</span>
+                        <span>STM32</span>
+                        <span>CI / CD</span>
+                        <span>Static Analysis</span>
+                        <span>Real-Time Concepts</span>
+                        <span>Thread Synchronization</span>
+                        <span>Memory Management</span>
+                        <span>Performance Tuning on Linux</span>
 
-    <!-- Why Work With Us Section -->
-    <section id="why-us" class="why-us">
-        <div class="container">
-            <h2 class="section-title">Why Work With Us</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>Accelerated Product Development</h3>
+                        <!-- Duplicate content for seamless loop -->
+                        <span>Embedded Linux Yocto</span>
+                        <span>Buildroot</span>
+                        <span>RTOS</span>
+                        <span>Linux Kernel</span>
+                        <span>SPI</span>
+                        <span>UART</span>
+                        <span>I2C</span>
+                        <span>Embedded Cross-Platform ARM Development</span>
+                        <span>Device Drivers</span>
+                        <span>Embedded Linux Applications</span>
+                        <span>Firmware</span>
+                        <span>C / C++ Development</span>
+                        <span>Python Development</span>
+                        <span>Embedded Software Testing</span>
+                        <span>ARM Cortex Processors</span>
+                        <span>STM32</span>
+                        <span>CI / CD</span>
+                        <span>Static Analysis</span>
+                        <span>Real-Time Concepts</span>
+                        <span>Thread Synchronization</span>
+                        <span>Memory Management</span>
+                        <span>Performance Tuning on Linux</span>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>Access to Specialized Experts</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>Improved Product Quality and Reliability</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">04</div>
-                    <h3>Focus on core Business</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">05</div>
-                    <h3>Cost savings/labor costs</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">06</div>
-                    <h3>Reduce Risk</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">07</div>
-                    <h3>Scalability and Flexibility</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">08</div>
-                    <h3>Competitive Advantage</h3>
-                </div>
-                <div class="benefit-item">
-                    <div class="benefit-number">09</div>
-                    <h3>Enhance Product features</h3>
-                </div>
+
             </div>
         </div>
     </section>
@@ -326,7 +340,7 @@
                 <div class="about-details">
                     <div class="detail-item">
                         <h4>Expertise</h4>
-                        <ul>
+                        <ul style="text-align: left;">
                             <li>Embedded Linux, Yocto</li>
                             <li>Embedded Platforms: ARM, RISC-V</li>
                             <li>Hardware Interface: I2C, SPI, UART</li>
@@ -336,7 +350,7 @@
                     </div>
                     <div class="detail-item">
                         <h4>Services</h4>
-                        <ul>
+                        <ul style="text-align: left;">
                             <li>Embedded Linux Development</li>
                             <li>Board Bring-up</li>
                             <li>Embedded Driver Development</li>
@@ -352,7 +366,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="about-text">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Please tell us about your project and other inquiries.</p>
+            </div>
+
             <div class="contact-content">
                 <form class="contact-form" id="contactForm">
                     <div class="form-row">
@@ -374,7 +392,7 @@
                             <label for="companyName">Company Name*</label>
                             <input type="text" id="companyName" name="companyName" required>
                         </div>
-                        
+
                     </div>
                     <div class="form-group">
                         <div class="form-group" style="margin-bottom: 20px;">
@@ -395,8 +413,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Antia LLC</p>
-            <p>Made and Designed by <a href="https://www.linkedin.com/in/ludmyla-almeida/" target="_blank">Ludmyla Almeida</a></p>
+            <p>&copy; 2025 Delta12 LLC</p>
+            <p>Made and Designed by <a href="https://www.linkedin.com/in/ludmyla-almeida/" target="_blank">Ludmyla
+                    Almeida</a></p>
         </div>
     </footer>
 

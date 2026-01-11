@@ -81,6 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.expertise-card, .service-card, .benefit-item, .contact-item');
     
     animatedElements.forEach((el, index) => {
+        // Skip cards in the vulcan-section
+        if (el.closest('.vulcan-section')) {
+            return;
+        }
+        
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
