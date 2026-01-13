@@ -601,10 +601,12 @@ ul {
 .flip-card-back {
     transform: rotateY(180deg);
     border: 1px solid var(--border-color);
+    background: #0052d7;
 }
 
 .flip-card-back h3 {
     margin-bottom: 1.5rem;
+    color: var(--text-primary);
 }
 
 .flip-card-back ul {
@@ -615,16 +617,20 @@ ul {
 
 .flip-card-back li {
     padding: 0rem 0;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     position: relative;
     padding-left: 1.5rem;
 }
 
 .flip-card-back li::before {
     content: '•';
-    color: var(--accent-color);
+    color: var(--text-primary);
     position: absolute;
     left: 0;
+}
+
+.flip-card-back p {
+    color: var(--text-primary);
 }
 
 .service-icon {

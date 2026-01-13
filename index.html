@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta12 - Embedded Software and Hardware Integration</title>
+    <title>Antia - Embedded Software and Hardware Integration</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="#home">Delta12</a>
+                    <a href="#home">ANTIA</a>
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#vulcan" class="nav-link">Products</a></li>
@@ -40,9 +40,9 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <!-- <span class="highlight">Delta12</span> -->
+                    <!-- <span class="highlight">Antia</span> -->
                 </h1>
-                <h2 class="hero-subtitle" style="font-size: 4rem;">Embedded Software and Firmware Development <span
+                <h2 class="hero-subtitle" style="font-size: 4rem;">Embedded Software and Firmware Integration <span
                         class="rotating-text">Made Easier</span>.</h2>
                 <p class="hero-description">
                     Significant cost savings, faster product development, faster time-to-market.
@@ -70,6 +70,7 @@
                     <ul style="font-weight: 400; list-style-position: inside;">
                         <li>Supports static and run-time analysis.</li>
                         <li>Firmware constraint analyzer and optimization.</li>
+                        <li>Documentation generation</li>
                         <li>Analyzer log and map fault to source.</li>
                     </ul>
                 </div>
@@ -79,6 +80,7 @@
                     <ul style="font-weight: 400; list-style-position: inside;">
                         <li>Supports driver skeleton generation.</li>
                         <li>Supports device tree and device tree overlay generation.</li>
+                        <li>Hardware data sheet parsing.</li>
                         <li>Analyzer log and map fault to source.</li>
                     </ul>
                 </div>
@@ -86,8 +88,10 @@
                 <div class="introducing-vulcan-card">
                     <h2 style="padding-bottom: 1em; text-align: center;">Embedded Linux/Yocto</h2>
                     <ul style="font-weight: light; list-style-position: inside;">
-                        <li>Supports recipe generation and build errors debugging.</li>
-                        <li>Supports Yocto and Buildroot tailored to your product needs.</li>
+                        <li>Supports recipe generation.</li>
+                        <li>Layer management: suggesting where new recipes should live, adding dependencies to
+                            conf/layer.conf.</li>
+                        <li>Build config tuning: editing local.conf, bblayers.conf, and distro.conf. </li>
                         <li>Analyzer log and map fault to source.</li>
                     </ul>
                 </div>
@@ -184,7 +188,12 @@
                             </div>
                             <div class="flip-card-back">
                                 <h3>Firmware Migration & Porting</h3>
-                                <p>Porting and legacy code modernization.</p>
+                                <ul>
+                                    <li>Updating and migrating firmware from one firmware version to another.</li>
+                                    <li>Adapting and migrating your existing firmware to run on your new microcontroller
+                                        (MCU) and SoC.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -275,52 +284,60 @@
             <div class="expertise-grid">
                 <div class="skills-carousel">
                     <div class="skills-track">
-                        <span>Embedded Linux Yocto</span>
+                        <span>OpenEmbedded/Yocto</span>
                         <span>Buildroot</span>
-                        <span>RTOS</span>
+                        <span>FreeRTOS</span>
                         <span>Linux Kernel</span>
                         <span>SPI</span>
                         <span>UART</span>
                         <span>I2C</span>
-                        <span>Embedded Cross-Platform ARM Development</span>
+                        <span>Embedded Cross-Platform Development</span>
                         <span>Device Drivers</span>
                         <span>Embedded Linux Applications</span>
                         <span>Firmware</span>
-                        <span>C / C++ Development</span>
+                        <span>C/C++ Development</span>
                         <span>Python Development</span>
                         <span>Embedded Software Testing</span>
                         <span>ARM Cortex Processors</span>
                         <span>STM32</span>
-                        <span>CI / CD</span>
+                        <span>CI/CD</span>
                         <span>Static Analysis</span>
                         <span>Real-Time Concepts</span>
                         <span>Thread Synchronization</span>
                         <span>Memory Management</span>
                         <span>Performance Tuning on Linux</span>
+                        <span>Git/GitLab</span>
+                        <span>MCU</span>
+                        <span>SoC</span>
+                        
+                        
 
                         <!-- Duplicate content for seamless loop -->
-                        <span>Embedded Linux Yocto</span>
-                        <span>Buildroot</span>
-                        <span>RTOS</span>
-                        <span>Linux Kernel</span>
-                        <span>SPI</span>
-                        <span>UART</span>
-                        <span>I2C</span>
-                        <span>Embedded Cross-Platform ARM Development</span>
-                        <span>Device Drivers</span>
-                        <span>Embedded Linux Applications</span>
-                        <span>Firmware</span>
-                        <span>C / C++ Development</span>
-                        <span>Python Development</span>
-                        <span>Embedded Software Testing</span>
-                        <span>ARM Cortex Processors</span>
-                        <span>STM32</span>
-                        <span>CI / CD</span>
-                        <span>Static Analysis</span>
-                        <span>Real-Time Concepts</span>
-                        <span>Thread Synchronization</span>
-                        <span>Memory Management</span>
-                        <span>Performance Tuning on Linux</span>
+                        <span>OpenEmbedded/Yocto</span>
+                            <span>Buildroot</span>
+                            <span>FreeRTOS</span>
+                            <span>Linux Kernel</span>
+                            <span>SPI</span>
+                            <span>UART</span>
+                            <span>I2C</span>
+                            <span>Embedded Cross-Platform Development</span>
+                            <span>Device Drivers</span>
+                            <span>Embedded Linux Applications</span>
+                            <span>Firmware</span>
+                            <span>C/C++ Development</span>
+                            <span>Python Development</span>
+                            <span>Embedded Software Testing</span>
+                            <span>ARM Cortex Processors</span>
+                            <span>STM32</span>
+                            <span>CI/CD</span>
+                            <span>Static Analysis</span>
+                            <span>Real-Time Concepts</span>
+                            <span>Thread Synchronization</span>
+                            <span>Memory Management</span>
+                            <span>Performance Tuning on Linux</span>
+                            <span>Git/GitLab</span>
+                            <span>MCU</span>
+                            <span>SoC</span>
                     </div>
                 </div>
 
@@ -383,14 +400,10 @@
                             <input type="text" id="lastName" name="lastName" required>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="companyName">Job Title</label>
-                            <input type="text" id="companyName" name="companyName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="companyName">Company Name*</label>
-                            <input type="text" id="companyName" name="companyName" required>
+                    <div class="form-group">
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label for="company">Company*</label>
+                            <input type="text" id="company" name="companyName" required>
                         </div>
 
                     </div>
@@ -401,7 +414,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="projectDetails">Tell me about your project*</label>
+                        <label for="projectDetails">Message*</label>
                         <textarea id="projectDetails" name="projectDetails" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -413,12 +426,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Delta12 LLC</p>
+            <p>&copy; 2025 Antia LLC</p>
             <p>Made and Designed by <a href="https://www.linkedin.com/in/ludmyla-almeida/" target="_blank">Ludmyla
                     Almeida</a></p>
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 

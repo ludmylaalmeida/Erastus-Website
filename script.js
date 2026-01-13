@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(rotateText, 3000);
 });
 
-// Contact form submission
+// Contact form submission with EmailJS
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -171,14 +171,38 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
             
-            // Here you would typically send the data to a server
-            console.log('Form submitted:', data);
+            // EmailJS configuration
+            const publicKey = 'QNkDS-HY-50ytuZBr';
+            const serviceId = 'service_lzpp5ob';
+            const templateId = 'template_bm07kcv';
             
-            // Show success message (you can customize this)
-            alert('Thank you for your message! We will get back to you soon.');
+            // Initialize EmailJS
+            emailjs.init(publicKey);
             
-            // Reset form
-            contactForm.reset();
+            // Prepare email parameters
+            // These variable names (from_name, message, etc.) must match what you use in your EmailJS template
+            const emailParams = {
+                to_email: 'chukpozohnt@gmail.com',
+                from_name: `${data.firstName} ${data.lastName}`,  // Maps from form field: name="firstName" + name="lastName"
+                from_email: data.email,                            // Maps from form field: name="email"
+                company: data.companyName,                        // Maps from form field: name="companyName"
+                message: data.projectDetails,                      // Maps from form field: name="projectDetails"
+                reply_to: data.email,                             // Uses the email field
+                subject: `New Contact Form Submission from ${data.firstName} ${data.lastName}`
+            };
+            
+            // Send email using EmailJS
+            emailjs.send(serviceId, templateId, emailParams)
+                .then(() => {
+                    // Show success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    // Reset form
+                    contactForm.reset();
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                    alert('Sorry, there was an error sending your message. Please try again later.');
+                });
         });
     }
 });
